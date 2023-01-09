@@ -3,7 +3,7 @@
         max-width: 960px;
     }
     
-    .title {
+    .banner__title {
         text-align: center;
     }
 
@@ -15,7 +15,7 @@
         max-width: unset;
     }
 
-    .name {
+    .about__box-name {
         margin: 50px auto 50px;
     }
 
@@ -34,13 +34,13 @@
         align-items: center;
     }
 
-    .menu {
+    .nav__list {
         display: flex;
         align-items: center;
         column-gap: 50px;
     }
 
-    .link {
+    .nav__link {
         margin: 0 auto;
     }
 }
@@ -50,16 +50,16 @@
         max-width: 540px;
     }
 
-    .title {
+    .banner__title {
         font-size: 30px;
     }
 
-    .baner__link {
+    .banner__link {
         font-size: 22px;
         padding: 3px 15px;
     }
 
-    .text {
+    .about__box-text {
         text-align: center;
     }
 }
@@ -70,11 +70,11 @@
         position: relative;
     }
 
-    .menu {
+    .nav__list {
         column-gap: 30px;
     }
 
-    .ava {
+    .about__ava {
         width: 100%;
     }
 }
@@ -85,11 +85,11 @@
         justify-content: space-evenly;
 
     }
-    .navbar {
+    .nav__menu {
         display: flex;
     }
 
-    .menu {
+    .nav__list {
         position: absolute;
         top: 64px;
         left: 0;
@@ -105,20 +105,20 @@
         transition: 500ms;
     }
 
-    .navbar:focus~.menu {
+    .nav__menu:focus~.nav__list {
         transform: translateX(0); 
     }
 
-    .card-img {
+    .card__img {
         max-width: 265px;
         width: 100%;
     }
 
-    .footer-title {
+    .footer__title {
         font-size: 30px;
     }
 
-    svg {
+    .footer__icon-svg {
         width: 45px;
     }
 
