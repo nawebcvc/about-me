@@ -1,3 +1,19 @@
+@import url(fonts.css);
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --hover: red;
+    --body-bg: #E5E5E5;
+    --about-bg: #0E1C25;
+    --card-bg: #B12B06;
+    --cards-bg: #5C6B81;
+    --inter-b: 'Inter_Bold';
+    --inter-r: 'Inter_Regular';
+    --inter-m: 'Inter_Medium';
+    --montserrat_r: 'Montserrat_Regular';
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +30,7 @@ ul {
 
 body {
     user-select: none; 
-    background: #E5E5E5;
+    background: var(--body-bg);
 }
 
 .container {
@@ -25,7 +41,7 @@ body {
 }
 
 .nav {
-    background: #000000;
+    background: var(--black);
     padding: 14px 0;
 
 }
@@ -52,7 +68,7 @@ body {
     display: block;
     width: 100%;
     height: 8px;
-    background: white;
+    background: var(--white);
     column-gap: 5px;
     border-radius: 2px;
     transition: 500ms;
@@ -62,26 +78,17 @@ body {
     display: flex;
 }
 
-.nav__logo {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #ffffff;
-}
-
 .nav__link {
-    font-family: 'Inter';
-    font-weight: 400;
+    font-family: var(--inter-r);
     font-size: 25px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: var(--white);
     margin-left: 75px;
     transition: 500ms;
 }
 
 .nav__link:hover {
-    color: red;
+    color: var(--hover);
 }
 
 .header__banner {
@@ -95,35 +102,32 @@ body {
 
 .banner__title {
     margin-bottom: 151px;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #000000;
+    color: var(--black) !important;
 }
 
 .banner__link {
-    font-family: 'Inter';
-    font-weight: 700;
+    font-family: var(--inter-b);
     font-size: 35px;
     line-height: 42px;
-    color: #000000;
-    background: #FFFFFF;
+    color: var(--black);
+    background: var(--white);
     border-radius: 10px;
     padding: 10px 23px;
 }
 
 .about {
-    background: #0E1C25;
+    background: var(--about-bg);
     padding-bottom: 112px;
 }
 
-.about__title, .title {
-    font-family: 'Inter';
-    font-weight: 700;
+.text {
+    font-family: var(--inter-b);
     font-size: 40px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: var(--white);
+}
+
+.about__title {
     text-align: center;
     padding: 30px 0 47px;
 }
@@ -134,56 +138,47 @@ body {
     align-items: center;
 }   
 
-h3 {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 42px;
-    color: #FFFFFF;
-    margin-bottom: 63px;
-}
-
 .about__box {
     max-width: 466px;
     width: 100%;
 }
 
 .about__box-text {
-    font-family: 'Inter';
-    font-weight: 500;
+    font-family: var(--inter-m);
     font-size: 18px;
     line-height: 22px;
     text-align: justify;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .about__box-name {
-    font-family: 'Inter';
-    font-weight: 500;
+    font-family: var(--inter-m);
     font-size: 35px;
     line-height: 42px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 
 }
 
 .cards {
-    background: #5C6B81;
+    background: var(--cards-bg);
     padding: 43px 0 40px;
 }
 
 .cards__title {
+    text-align: center;
     margin-bottom: 60px;
     padding: 0;
 }
 
-.card__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
+.card_text {
+    font-family: var(--inter-b);
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
+}
+
+.card__title {
+    color: var(--white);
     margin-bottom: 20px;
 }
 
@@ -191,36 +186,29 @@ h3 {
     margin-bottom: 20px;
 }
 
-.card-desc {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
+.card__desc {
+    font-family: var(--inter-b);
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 20px;
     text-align: center;
 }
 
-.card-link {
+.card__link {
     display: inline-block;
     text-align: center;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
+    color: var(--black);
     padding: 8px;
     max-width: 168px;
     width: 100%;
 }
 
 .card {
-    background: #B12B06;
+    background: var(--card-bg);
     border-radius: 10px;
     max-width: 312px;
     width: 100%;
@@ -237,19 +225,17 @@ h3 {
 }
 
 footer {
-    background: #000000;
+    background: var(--black);
     padding: 46px 0 55px;
 }
 
 .footer__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--montserrat_r);
     font-size: 40px;
     line-height: 49px;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 0;
     margin-bottom: 34px;
 }
